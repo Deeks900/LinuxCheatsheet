@@ -125,7 +125,7 @@ Using **sftp** ->Interactively transfers files over SSH
 📍find . -name "_Deeksha_" ! -name "_Deeksha Sharma_" -exec cp '{}' "/path/folderName" \\; | This command is first finding all the files in current directory which have substring Deeksha in their names but Deeksha Sharma as a whole substring should not be there in those file names.Then we are copying all those files to destined folder 
 📍ls -1 \| wc -l |Does not return extra header row 
 📍ls -l \| wc -l | Returns one extra header row 
-📍find . -name "_2017 Colleague Feedback_" -exec ls '{}' \\; |Use of ls command with find
+📍find . -name "_2015 Deeksha_" -exec ls '{}' \\; |Use of ls command with find
 📍chmod -R u+w folderName | To deal with Write protected error 
 📍nohup bash -c 'for zip in *.zip; do unzip "$zip" -d /outerFolder/folderName/others/; done' & | This unzip all the zip files in a directory 
 📍unset TMOUT | Disable the TMOUT environment variable.Shell will remain open indefinitely even if there is no activity.
