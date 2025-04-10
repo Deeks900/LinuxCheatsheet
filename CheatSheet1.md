@@ -70,7 +70,8 @@ Using **sftp** ->Interactively transfers files over SSH
 
     nohup command > /dev/null 2>&1 & 
 
-`nohup command > output.log 2>&1 &` 
+`nohup command > output.log 2>&1 
+&` 
 `& -> make sure to run the process in background and give you terminal back instantly.` 
 
     2>&1 -> Redirection mechanism in linux. 
@@ -94,7 +95,7 @@ Using **sftp** ->Interactively transfers files over SSH
     while true; do
           /pathToYourFileLocation/abc.cpp > /dev/null 2>&1 
           sleep 2
-        done
+    done
     
     And then can run this shell script itself with no hup - nohup ./def.sh > /dev/null 2>&1 &
 
