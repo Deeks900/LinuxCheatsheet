@@ -72,14 +72,16 @@ Using **sftp** ->Interactively transfers files over SSH
 
 `nohup command > output.log 2>&1 
 &` 
-`& -> make sure to run the process in background and give you terminal back instantly.` 
+
+ `& -> make sure to run the process in background and give you terminal back instantly.` 
 
     2>&1 -> Redirection mechanism in linux. 
     1 -> Standard Output
-     2 -> Standard Error 
+    2 -> Standard Error 
      This says that send both the things to the sample place like output.log 
 
     /dev/null -> Special file in linux that discards any data written to it. Use it when you don’t care about the output of your command.
+
 
 📌Suppose you are in situation where you have space issues and want to run a script that can cleanup some specific named style files like every 24 hours. You can use :
 
